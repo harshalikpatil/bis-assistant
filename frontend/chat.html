@@ -1,0 +1,24 @@
+<!doctype html><html lang="en"><head><title>Ask the assistant | ManakSetu</title><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"></head><body class="chat-page">
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="wrap bar">
+<a class="brand" href="index.html"><span class="logo" aria-hidden="true">MS</span>ManakSetu</a>
+<button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+<nav class="main" id="nav" aria-label="Main">
+<a href="index.html" data-i18n="home" ></a><a href="chat.html" data-i18n="chat" aria-current="page"></a><a href="finder.html" data-i18n="finder"></a><a href="services.html" data-i18n="services"></a><a href="index.html#about" data-i18n="about"></a>
+<select class="lang" aria-label="Language"><option value="en">English</option><option value="hi">हिन्दी</option><option value="mr">मराठी</option></select>
+</nav></div></header>
+<div class="chat-shell">
+<aside class="side"><h2>Try asking</h2>
+<button class="chip">What is an Indian Standard?</button>
+<button class="chip">How do I get BIS certification for a product?</button>
+<button class="chip">What testing does my product need?</button>
+<button class="chip">How does hallmarking work?</button></aside>
+<main class="main-chat" id="main">
+<div class="banner" data-i18n="demo">Demo mode: replies are placeholders, not official BIS information.</div>
+<div id="log" role="log" aria-live="polite"></div>
+<form class="composer" id="form"><label class="skip" for="q">Your question</label>
+<textarea id="q" rows="1" data-i18n-ph="ph" placeholder="Type your question…"></textarea>
+<button class="btn" type="submit" data-i18n="send">Send</button></form>
+</main></div>
+<dialog id="srcDlg" aria-labelledby="srcTitle"><h2 id="srcTitle" style="font-size:1.2rem"></h2><p id="srcMeta" class="sub" style="margin:4px 0 12px"></p><blockquote id="srcText"></blockquote><p id="srcLink"></p><form method="dialog"><button class="btn alt">Close</button></form></dialog>
+<script src="js/i18n.js"></script><script src="js/main.js"></script><script src="js/chat.js"></script></body></html>

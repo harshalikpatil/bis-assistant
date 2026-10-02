@@ -1,0 +1,23 @@
+<!doctype html><html lang="en"><head><title>Find standards | ManakSetu</title><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/style.css"></head><body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top"><div class="wrap bar">
+<a class="brand" href="index.html"><span class="logo" aria-hidden="true">MS</span>ManakSetu</a>
+<button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+<nav class="main" id="nav" aria-label="Main">
+<a href="index.html" data-i18n="home"></a><a href="chat.html" data-i18n="chat"></a><a href="finder.html" data-i18n="finder" aria-current="page"></a><a href="services.html" data-i18n="services"></a><a href="index.html#about" data-i18n="about"></a>
+<select class="lang" aria-label="Language"><option value="en">English</option><option value="hi">हिन्दी</option><option value="mr">मराठी</option></select>
+</nav></div></header>
+<main id="main"><div class="wrap" style="max-width:640px">
+<div class="page-head"><h1 style="font-size:clamp(1.8rem,4vw,2.6rem)">Find standards for your product</h1>
+<p class="lead">Describe your product and what you need. ManakSetu turns this into a question and searches the BIS sources.</p></div>
+<form id="finder" class="card" style="display:grid;gap:16px">
+<label>Product or material<br><input id="product" required maxlength="120" style="width:100%;font:inherit;padding:11px 14px;border:1px solid var(--line);border-radius:8px" placeholder="For example: electric kettle"></label>
+<label>I am a<br><select id="role" style="width:100%;font:inherit;padding:11px 14px;border:1px solid var(--line);border-radius:8px"><option>manufacturer</option><option>MSME or startup owner</option><option>importer</option><option>consumer</option><option>student</option></select></label>
+<label>I want to<br><select id="need" style="width:100%;font:inherit;padding:11px 14px;border:1px solid var(--line);border-radius:8px"><option>find the Indian Standards that apply</option><option>understand the certification process</option><option>understand the testing required</option><option>check hallmarking rules</option></select></label>
+<button class="btn" type="submit">Ask ManakSetu</button></form>
+</div></main>
+<footer style="margin-top:40px"><div class="wrap">Prototype for SIH 2026. Not affiliated with or endorsed by the Bureau of Indian Standards.</div></footer>
+<script src="js/i18n.js"></script><script src="js/main.js"></script>
+<script>document.getElementById("finder").addEventListener("submit",e=>{e.preventDefault();
+const q="I am a "+role.value+". My product is "+product.value.trim()+". I want to "+need.value+".";
+location.href="chat.html?q="+encodeURIComponent(q)});</script></body></html>
